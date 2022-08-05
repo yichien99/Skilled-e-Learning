@@ -9,7 +9,7 @@ const Intro = () => {
                 <Text 
                     fontSize='40'
                     fontWeight='extrabold'
-                    color='brand.darkBlue'
+                    color='brand.blue'
                     paddingTop='20'
                     paddingBottom='10'
                 >
