@@ -1,5 +1,6 @@
 // 1. Import `extendTheme`
 import { extendTheme } from "@chakra-ui/react"
+import "@fontsource/plus-jakarta-sans"
 
 // 2. Call `extendTheme` and pass your custom values
 const theme = extendTheme({
@@ -16,6 +17,10 @@ const theme = extendTheme({
         orange: '#FF6F48'
     },
   },
+  font:{
+    heading: 'Plus Jakarta Sans',
+    body: 'Plus Jakarta Sans'
+  }
 })
 
 export default theme

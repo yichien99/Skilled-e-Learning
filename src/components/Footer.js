@@ -1,16 +1,19 @@
 import React from 'react';
-import { Flex, Text, Spacer, Button } from '@chakra-ui/react';
+import {  Text, Spacer, Button, Flex } from '@chakra-ui/react';
 
 
 const Footer = () => {
     return ( 
         <Flex 
+            direction='row'
+            w='100%'
             h='100'
             align='center'
-            marginLeft='20'
-            marginRight='20'
+            marginLeft={['5','10','10','20']}
+            marginRight={['5','10','10','20']}
         >
             <Text
+                fontFamily='brand.heading'
                 fontWeight='bold'
                 fontSize='32'
                 color='brand.white'
@@ -23,10 +26,8 @@ const Footer = () => {
                 borderRadius='3xl'
                 _hover={{
                     opacity: '50%'
-                  }}
-            >
-                Get Started
-            </Button>
+                }}
+            >Get Started</Button>
         </Flex>
     );
 }

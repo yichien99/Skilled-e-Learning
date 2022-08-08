@@ -5,8 +5,8 @@ import { Flex, Text, Spacer, Button } from '@chakra-ui/react';
     return ( 
         <Flex 
             align='center'
-            marginLeft='20'
-            marginRight='20'
+            marginLeft={['5','10','10','20']}
+            marginRight={['5','10','10','20']}
             h='100'
         >
             <Text
@@ -16,16 +16,14 @@ import { Flex, Text, Spacer, Button } from '@chakra-ui/react';
             >skilled</Text>
             <Spacer />
             <Button 
-                bgColor = '#13183F'
-                textColor = '#FFFFFF'
+                bgColor = 'brand.darkBlue'
+                textColor = 'brand.white'
                 size='lg'
                 borderRadius='3xl'
                 _hover={{
                     bgColor: '#666CA3'
                 }}
-            >
-                Get Started
-            </Button>
+            >Get Started</Button>
         </Flex>
     );
  }

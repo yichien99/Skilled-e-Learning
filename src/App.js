@@ -2,12 +2,8 @@ import React from 'react';
 import {
   ChakraProvider,
   Box,
-  Stack,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
+  Wrap,
+  WrapItem,
 } from '@chakra-ui/react';
 import Navbar from './components/Navbar';
 import Intro from './components/Intro';
@@ -18,17 +14,20 @@ import theme from './utils/theme'
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box bgGradient='linear(to-t, brand.lightGray, brand.white)'>
-        <Box> 
-          <Navbar />
-          <Intro />
-        </Box>
-        <Courses />
-        <Box bgColor='brand.darkBlue'>
-          <Footer />
-        </Box>
-      </Box>
-        
+      <Wrap bgGradient='linear(to-t, brand.lightGray, brand.white)'>
+        <WrapItem>
+          <Box> 
+            <Navbar />
+            <Intro />
+          </Box>
+        </WrapItem>
+        <WrapItem>
+          <Courses />
+        </WrapItem>
+        <WrapItem bgColor='brand.darkBlue' w='100%'>
+            <Footer />
+        </WrapItem>
+      </Wrap>
     </ChakraProvider>
   );
 }
