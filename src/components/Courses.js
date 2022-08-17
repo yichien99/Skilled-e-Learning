@@ -4,7 +4,7 @@ import business from '../assets/icon-business.svg';
 import crypto from '../assets/icon-crypto.svg';
 import design from '../assets/icon-design.svg';
 import photography from '../assets/icon-photography.svg';
-import { Box, Text, Button, Image, Wrap, WrapItem } from '@chakra-ui/react';
+import { Box, Text, Button, Image, Wrap, WrapItem, Spacer } from '@chakra-ui/react';
 
 const Courses = () => {
     const [data, setData] = useState([
@@ -43,12 +43,13 @@ const Courses = () => {
         <Wrap 
             marginLeft={['5','10','10','20']} 
             marginRight={['5','10','10','20']} 
-            px={['0','3','3','3']}
+            justify='center'
+            w='100%'
         >
             <WrapItem py='5'>
                 <Box 
                     bgGradient='linear(to-t, brand.red, brand.orange)'
-                    w={['100%','330px','350px', '360px']}
+                    w={['100%','330px','325px', '360px']}
                     h={['','300','300','320']}
                     borderRadius='2xl'
                 >
@@ -64,7 +65,7 @@ const Courses = () => {
             {data.map((data) => (
                 <WrapItem key={ data.id } py='5'>
                     <Box
-                        w={['100%','330px','350px', '360px']}
+                        w={['100%','330px','325px', '360px']}
                         h={['','300','300','320']}
                         bgColor='brand.white'
                         borderRadius='2xl'
@@ -110,6 +111,7 @@ const Courses = () => {
                             }}
                         >Get Started</Button>
                     </Box>
+                    <Spacer />
                 </WrapItem>
             ))}
         </Wrap>
