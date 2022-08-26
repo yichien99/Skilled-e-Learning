@@ -15,7 +15,7 @@ const Intro = () => {
                 w={['90%','70%','70%','70%']}
             >
                 <Text 
-                    fontFamily='brand.heading'
+                    fontFamily='font.heading'
                     fontSize={['36','36','36','56']}
                     fontWeight='extrabold'
                     color='brand.darkBlue'
@@ -23,7 +23,7 @@ const Intro = () => {
                     paddingBottom='10'
                 >Maximise skill, minimise budget</Text>
                 <Text
-                    fontFamily='brand.body'
+                    fontFamily='font.body'
                     fontSize='18'
                     fontWeight='medium'
                     color='brand.darkGray'

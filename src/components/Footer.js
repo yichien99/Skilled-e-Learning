@@ -13,7 +13,7 @@ const Footer = () => {
             marginRight={['5','10','10','20']}
         >
             <Text
-                fontFamily='brand.heading'
+                fontFamily='font.heading'
                 fontWeight='bold'
                 fontSize='32'
                 color='brand.white'
